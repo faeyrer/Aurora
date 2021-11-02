@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurora</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? family = Open + Sans & display = swap " rel=" stylesheet ">
@@ -39,17 +40,41 @@
     </header>
     <main>
         <div class="banner">
-            <p>Banner</p>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagen/banner/tortas-banner.jpg" class="d-block w-100" alt="Tortas Aurora">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen/banner/budin-banner.jpg" class="d-block w-100" alt="Budines Aurora">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen/banner/sanguches-banner.jpg" class="d-block w-100" alt="Sanguches Aurora">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-        <div class="imagenes--animacion">
+        <div class="imagenes--animacion" class="contenedor--imagenes">
             <div class="Inicio__imagenes--titulo">Tortas Personalizadas</div>
             <div class="contenedor">
                 <a href="infoProducto.html"><img src="imagen/tortas/torta1.jpeg" alt="Torta personalizada Aurora"
                         id="inicio__imagenes--principal"></a>
                 <a href="infoProducto.html"><img src="imagen/tortas/torta2.jpg" alt="Torta personalizada Aurora"></a>
                 <a href="infoProducto.html"><img src="imagen/tortas/torta3.jpg" alt="Torta personalizada Aurora"></a>
-                <a href="infoProducto.html"><img src="imagen/tortas/torta4.jpg" alt="Torta personalizada Aurora"></a>
-                <a href="infoProducto.html"><img src="imagen/tortas/torta5.jpg" alt="Torta personalizada Aurora"></a>
+                <a href="infoProducto.html" class="imagenes--esconder"><img src="imagen/tortas/torta4.jpg"
+                        alt="Torta personalizada Aurora"></a>
+                <a href="infoProducto.html" class="imagenes--esconder"><img src="imagen/tortas/torta5.jpg"
+                        alt="Torta personalizada Aurora"></a>
             </div>
             <div class="Inicio__imagenes--titulo">Tartas</div>
             <div class="contenedor">
@@ -57,8 +82,10 @@
                         id="inicio__imagenes--principal"></a>
                 <a href="infoProducto.html"><img src="imagen/tartas/tarta2.jpg" alt="Tarta Aurora"></a>
                 <a href="infoProducto.html"><img src="imagen/tartas/tarta3.jpeg" alt="Tarta Aurora"></a>
-                <a href="infoProducto.html"><img src="imagen/tartas/tarta4.jpg" alt="Tarta Aurora"></a>
-                <a href="infoProducto.html"><img src="imagen/tartas/tarta5.jpg" alt="Tarta Aurora"></a>
+                <a href="infoProducto.html" class="imagenes--esconder"><img src="imagen/tartas/tarta4.jpg"
+                        alt="Tarta Aurora"></a>
+                <a href="infoProducto.html" class="imagenes--esconder"><img src="imagen/tartas/tarta5.jpg"
+                        alt="Tarta Aurora"></a>
             </div>
             <div class="Inicio__imagenes--titulo">Sanguches y Empanadas</div>
             <div class="contenedor">
@@ -66,8 +93,10 @@
                         id="inicio__imagenes--principal"></a>
                 <a href="infoProducto.html"><img src="imagen/sanguches/sanguches2.jpg" alt="Sanguches Aurora"></a>
                 <a href="infoProducto.html"><img src="imagen/sanguches/sanguches3.jpg" alt="Sanguches Aurora"></a>
-                <a href="infoProducto.html"><img src="imagen/sanguches/sanguches4.jpg" alt="Sanguches Aurora"></a>
-                <a href="infoProducto.html"><img src="imagen/sanguches/sanguches5.jpg" alt="Sanguches Aurora"></a>
+                <a href="infoProducto.html" class="imagenes--esconder"><img src="imagen/sanguches/sanguches4.jpg"
+                        alt="Sanguches Aurora"></a>
+                <a href="infoProducto.html" class="imagenes--esconder"><img src="imagen/sanguches/sanguches5.jpg"
+                        alt="Sanguches Aurora"></a>
             </div>
             <div class="Inicio__imagenes--titulo">Budines</div>
             <div class="contenedor">
@@ -75,17 +104,21 @@
                         id="inicio__imagenes--principal"></a>
                 <a href="infoProducto.html"><img src="imagen/budin/budin2.jpg" alt="budines Aurora"></a>
                 <a href="infoProducto.html"><img src="imagen/budin/budin3.jpg" alt="budines Aurora"></a>
-                <a href="infoProducto.html"><img src="imagen/budin/budin4.jpg" alt="budines Aurora"></a>
-                <a href="infoProducto.html"><img src="imagen/budin/budin5.jpg" alt="budines Aurora"></a>
+                <a href="infoProducto.html" class="imagenes--esconder"><img src="imagen/budin/budin4.jpg"
+                        alt="budines Aurora"></a>
+                <a href="infoProducto.html" class="imagenes--esconder"><img src="imagen/budin/budin5.jpg"
+                        alt="budines Aurora"></a>
             </div>
             <div class="Inicio__imagenes--titulo">Galletas y chocolates</div>
-            <div class="contenedor--final">
+            <div class="contenedor">
                 <a href="infoProducto.html"><img src="imagen/galletas/galletas1.jpeg" alt="galletas Aurora"
                         id="inicio__imagenes--principal"></a>
                 <a href="infoProducto.html"><img src="imagen/galletas/galletas2.jpg" alt="galletas Aurora"></a>
                 <a href="infoProducto.html"><img src="imagen/galletas/galletas3.jpg" alt="galletas Aurora"></a>
-                <a href="infoProducto.html"><img src="imagen/galletas/galletas4.jpg" alt="galletas Aurora"></a>
-                <a href="infoProducto.html"><img src="imagen/galletas/galletas5.jpg" alt="galletas Aurora"></a>
+                <a href="infoProducto.html" class="imagenes--esconder"><img src="imagen/galletas/galletas4.jpg"
+                        alt="galletas Aurora"></a>
+                <a href="infoProducto.html" class="imagenes--esconder"><img src="imagen/galletas/galletas5.jpg"
+                        alt="galletas Aurora"></a>
             </div>
         </div>
     </main>
@@ -105,6 +138,7 @@
             </ul>
         </div>
     </footer>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

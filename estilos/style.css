@@ -1,0 +1,222 @@
+/* Propiedades Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFE5F0;
+}
+
+header {
+    background-color: #EA899A;
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 13px;
+    list-style: none;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 9rem;
+}
+.menu{
+    display: none;
+}
+
+/* Inicio */
+.banner {
+    width: 90%;
+    margin: 10rem auto 5rem;
+}
+
+.banner p {
+    font-size: 5rem;
+    text-align: center;
+}
+.contenedor {
+    width: 80%;
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenedor img {
+    width: 5rem;
+    height: 6rem;
+    object-fit: cover;
+    margin: 0.2em;
+    border: solid #fff 3px;
+    border-radius: 1rem;
+}
+.imagenes--esconder{
+    display: none;
+}
+
+.Inicio__imagenes--titulo {
+    width: 80%;
+    margin: 3rem auto 0;
+    font-size: 1.5rem;
+    color: rgb(245, 77, 169);
+}
+
+/* Contacto */
+.contacto--posicion {
+    background-color: aliceblue;
+    width: 90%;
+    margin: 10rem auto;
+    border: solid 5px #fc8080b9;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    color: rgb(253, 123, 184);
+}
+
+.contacto--posicion * {
+    padding: .5rem;
+}
+
+.contacto--posicion form input,
+.contacto--posicion form button,
+.contacto--posicion form textarea {
+    width: 100%;
+    padding: .7rem;
+}
+
+.contacto--posicion form button {
+    background-color: #fc8080b9;
+    border-radius: 3rem;
+    margin: 0 20%;
+    width: 60%;
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+
+.contacto--posicion form select {
+    width: 50%;
+}
+
+.contacto--posicion form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacto--posicion form .entero {
+    grid-column: 1 / 3;
+}
+
+.contacto--posicion form button:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #FDCAE1;
+    transition: all .5s;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #FDCAE1;
+    width: 100%;
+    height: 5rem;
+}
+
+.footer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.iconos{
+    list-style: none;
+}
+
+.footer__icono--estilo {
+    text-decoration: none;
+    font-size: 3rem;
+    color: rgba(252, 240, 222, 0.726);
+}
+
+.redes li {
+    display: inline;
+    position: relative;
+}
+
+.footer__icono--contacto {
+    text-decoration: none;
+    color: #ff0080;
+    font-size: 1rem;
+}
+
+.footer__texto--estilo {
+    text-decoration: none;
+    color: #F95F62;
+    font-size: 1rem;
+    padding: 0 0 0 0.5rem;
+}
+
+.footer__icono--sobreNosotros {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+/* estilos para tablet y escritorio */
+@media (min-width: 768px){
+    .menu{
+        display: inline-block;
+    }
+    .menu ul li {
+        position: relative;
+        bottom: 1.7rem;
+        display: inline-block;
+        padding: 1.5rem .7rem ;
+    }
+    
+    .menu ul li a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+    
+    .menu ul li:hover {
+        background-color: #FDCAE1;
+        transition: all .5s;
+    }
+    .imagenes--esconder{
+        display: inline-block;
+    }
+    .contenedor img{
+        width: 9rem;
+        height: 9rem;
+    }
+    .contenedor img:hover{
+        width: 12rem;
+        height: 12rem;
+        transition: 1s;
+    }
+    footer{
+        height: 7rem;
+    }
+    .footer__icono--estilo{
+        font-size: 5rem;
+    }
+    .footer__texto--estilo{
+        font-size: 1.5rem;
+    }
+    .footer__icono--contacto{
+        font-size: 2rem;
+    }
+    .footer__icono--sobreNosotros{
+        font-size: 2rem;
+    }
+}
