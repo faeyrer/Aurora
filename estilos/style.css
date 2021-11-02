@@ -33,15 +33,6 @@ header {
 }
 .menu{
     display: none;
-    flex-direction: column;
-
-}
-.menu li{
-    list-style: none;
-}
-.menu li a{
-    text-decoration: none;
-    color: aliceblue;
 }
 .menuHamburguesa{
     padding: 1rem;
@@ -50,11 +41,6 @@ header {
     color: #ffffffb7;
     text-decoration: none;
 }
-.menuHamburguesa:focus{
-    color: #fff;
-    background-color: #FDCAE1;
-}
-
 /* Inicio */
 .banner {
     width: 90%;
