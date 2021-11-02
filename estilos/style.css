@@ -33,6 +33,33 @@ header {
 }
 .menu{
     display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    background-color: #EA899A;
+    padding: 0 1rem 0;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.menuHamburguesa{
+    padding: 1rem;
+    position: relative;
+    bottom: 2rem;
+    color: #ffffffb7;
+    text-decoration: none;
+}
+.menuHamburguesa:focus ~ .menu {
+    display: flex;
+}
+.menuHamburguesa:focus{
+    color: #fff;
+    background-color: #FDCAE1;
 }
 
 /* Inicio */
@@ -173,8 +200,12 @@ footer {
 }
 /* estilos para tablet y escritorio */
 @media (min-width: 768px){
+    .menuHamburguesa{
+        display: none;
+    }
     .menu{
         display: inline-block;
+        position: relative;
     }
     .menu ul li {
         position: relative;
