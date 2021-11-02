@@ -34,11 +34,7 @@ header {
 .menu{
     display: none;
     flex-direction: column;
-    position: absolute;
-    right: 0;
-    top: 4rem;
-    background-color: #EA899A;
-    padding: 0 1rem 0;
+
 }
 .menu li{
     list-style: none;
@@ -53,9 +49,6 @@ header {
     bottom: 2rem;
     color: #ffffffb7;
     text-decoration: none;
-}
-.menuHamburguesa:focus ~ .menu {
-    display: flex;
 }
 .menuHamburguesa:focus{
     color: #fff;
