@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -24,34 +23,24 @@ header {
 
 /* Navbar */
 .navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .logo img {
     width: 9rem;
 }
-
-.menu {
+.menu{
     display: none;
 }
-
-.menuHamburguesa {
+.menuHamburguesa{
     padding: 1rem;
     position: relative;
     bottom: 2rem;
     color: #ffffffb7;
     text-decoration: none;
 }
-
 /* Inicio */
 .banner {
     width: 90%;
@@ -62,32 +51,23 @@ header {
     font-size: 5rem;
     text-align: center;
 }
-
 .contenedor {
     width: 80%;
     margin: 0 auto 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
 .contenedor img {
     width: 5rem;
     height: 6rem;
-    -o-object-fit: cover;
     object-fit: cover;
     margin: 0.2em;
     border: solid #fff 3px;
     border-radius: 1rem;
 }
-
-.imagenes--esconder {
+.imagenes--esconder{
     display: none;
 }
 
@@ -95,7 +75,7 @@ header {
     width: 80%;
     margin: 3rem auto 0;
     font-size: 1.5rem;
-    color: #f54da9;
+    color: rgb(245, 77, 169);
 }
 
 /* Contacto */
@@ -106,7 +86,7 @@ header {
     border: solid 5px #fc8080b9;
     border-radius: 2rem;
     font-size: 1.2rem;
-    color: #fd7bb8;
+    color: rgb(253, 123, 184);
 }
 
 .contacto--posicion * {
@@ -134,15 +114,11 @@ header {
 }
 
 .contacto--posicion form {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 }
 
 .contacto--posicion form .entero {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-column: 1 / 3;
 }
 
@@ -150,7 +126,6 @@ header {
     cursor: pointer;
     color: #000;
     background-color: #FDCAE1;
-    -webkit-transition: all .5s;
     transition: all .5s;
 }
 
@@ -165,19 +140,11 @@ footer {
 
 .footer {
     padding: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 }
-
-.iconos {
+.iconos{
     list-style: none;
 }
 
@@ -210,71 +177,56 @@ footer {
     color: #000;
     font-size: 1rem;
 }
-
 /* estilos para tablet y escritorio */
-@media (min-width: 768px) {
-    .menuHamburguesa {
+@media (min-width: 768px){
+    .menuHamburguesa{
         display: none;
     }
-
-    .menu {
+    .menu{
         display: inline-block;
         position: relative;
     }
-
     .menu ul li {
         position: relative;
         bottom: 1.7rem;
         display: inline-block;
-        padding: 1.5rem .7rem;
+        padding: 1.5rem .7rem ;
     }
-
+    
     .menu ul li a {
         text-decoration: none;
         color: aliceblue;
     }
-
+    
     .menu ul li:hover {
         background-color: #FDCAE1;
-        -webkit-transition: all .5s;
         transition: all .5s;
     }
-
-    .imagenes--esconder {
+    .imagenes--esconder{
         display: inline-block;
     }
-
-    .contenedor img {
+    .contenedor img{
         width: 9rem;
         height: 9rem;
     }
-
-    .contenedor img:hover {
+    .contenedor img:hover{
         width: 12rem;
         height: 12rem;
-        -webkit-transition: 1s;
         transition: 1s;
     }
-
-    footer {
+    footer{
         height: 7rem;
     }
-
-    .footer__icono--estilo {
+    .footer__icono--estilo{
         font-size: 5rem;
     }
-
-    .footer__texto--estilo {
+    .footer__texto--estilo{
         font-size: 1.5rem;
     }
-
-    .footer__icono--contacto {
+    .footer__icono--contacto{
         font-size: 2rem;
     }
-
-    .footer__icono--sobreNosotros {
+    .footer__icono--sobreNosotros{
         font-size: 2rem;
     }
 }
-
-/*# sourceMappingURL=style.css.map */
