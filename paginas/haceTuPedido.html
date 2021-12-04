@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora/Pedidos</title>
+    <meta name="description" content="Aurora pasteleria es un emprendimiento que empieza desde casa buscando ofrecer un producto que llene tanto la panza como el corazon">
+    <meta name="keywords" content="Pasteleria, vegana, emprendimiento, comida">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/be5084a1a0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../imagen/logo.png" alt="Logo Aurora"></a>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="menuHamburguesa">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="haceTuPedido.html" class="activo">Hace tu pedido</a>
+                </li>
+                <li>
+                    <a href="sobreNosotros.html">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="infoProducto.html">Productos</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="pedido">
+            <h1>Arme su pedido</h1>
+            <div class="pedidoCategoria categorias">
+                <h2>Seleccione la categoria.</h2>
+                <input type="radio" name="categoria" class="pedidoEsconder" id="tortas">
+                <label for="tortas" class="seleccionadoTorta">Tortas Personalizadas</label>
+                <input type="radio" name="categoria" class="pedidoEsconder" id="budines">
+                <label for="budines" class="seleccionadoBudin">Budines</label>
+                <input type="radio" name="categoria" class="pedidoEsconder" id="sanguches">
+                <label for="sanguches" class="seleccionadoSanguche">Sanguches y Empanadas</label>
+                <input type="radio" name="categoria" class="pedidoEsconder" id="categoriaGalletas">
+                <label for="categoriaGalletas" class="seleccionadoGalleta">Tartas, galletas y chocolate</label>
+            </div>
+            <div class="inicial categorias" id="pedidoTortas">
+                <h2>Elija el sabor de la torta.</h2>
+                <input type="radio" name="tortas" class="pedidoEsconder" id="opcion1">
+                <label for="opcion1" class="seleccionado1">Chocolate.</label>
+                <input type="radio" name="tortas" class="pedidoEsconder" id="opcion2">
+                <label for="opcion2" class="seleccionado2">vainilla.</label>
+                <input type="radio" name="tortas" class="pedidoEsconder" id="opcion3">
+                <label for="opcion3" class="seleccionado3">Chocolate y vainilla.</label>
+                <input type="radio" name="tortas" class="pedidoEsconder" id="opcion4">
+                <label for="opcion4" class="seleccionado4">Otro. (Aclarar abajo)</label>
+            </div>
+            <div class="inicial categorias" id="pedidoBudines">
+                <h2>Elija de que va a ser su budin.</h2>
+                <input type="radio" name="budin" class="pedidoEsconder" id="chocolate">
+                <label for="chocolate" class="seleccionadoChocolate">Chocolate</label>
+                <input type="radio" name="budin" class="pedidoEsconder" id="vainilla">
+                <label for="vainilla" class="seleccionadoVainilla">Vainilla</label>
+                <input type="radio" name="budin" class="pedidoEsconder" id="frutales">
+                <label for="frutales" class="seleccionadoFrutal">Frutales</label>
+            </div>
+            <div class="inicial categorias" id="budinesFrutales">
+                <h2>Aclare el sabor frutal de su budin.</h2>
+                <input type="radio" name="budinFrutal" class="pedidoEsconder" id="limon">
+                <label for="limon" class="seleccionadoLimon">Limon</label>
+                <input type="radio" name="budinFrutal" class="pedidoEsconder" id="naranja">
+                <label for="naranja" class="seleccionadoNaranja">Naranja</label>
+                <input type="radio" name="budinFrutal" class="pedidoEsconder" id="banana">
+                <label for="banana" class="seleccionadoBanana">Banana</label>
+                <input type="radio" name="budinFrutal" class="pedidoEsconder" id="manzana">
+                <label for="manzana" class="seleccionadoManzana">Manzana</label>
+            </div>
+            <div class="inicial categorias" id="pedidoSanguches">
+                <h2>Elija que va a querer comer.</h2>
+                <input type="radio" name="sanguche" class="pedidoEsconder" id="sanguche">
+                <label for="sanguche" class="seleccionadoSanguches">Sanguches</label>
+                <input type="radio" name="sanguche" class="pedidoEsconder" id="empanadas">
+                <label for="empanadas" class="seleccionadoEmpanada">Empanadas</label>
+                <input type="radio" name="sanguche" class="pedidoEsconder" id="wraps">
+                <label for="wraps" class="seleccionadoWrap">Wraps</label>
+            </div>
+            <div class="inicial categorias" id="gustoSalados">
+                <h2>Elija el relleno de su comida.</h2>
+                <input type="radio" name="relleno" class="pedidoEsconder" id="soja">
+                <label for="soja" class="seleccionadoSoja">Soja</label>
+                <input type="radio" name="relleno" class="pedidoEsconder" id="tofu">
+                <label for="tofu" class="seleccionadoTofu">Tofu</label>
+                <input type="radio" name="relleno" class="pedidoEsconder" id="lentejas">
+                <label for="lentejas" class="seleccionadoLenteja">Lentejas</label>
+                <input type="radio" name="relleno" class="pedidoEsconder" id="garbanzos">
+                <label for="garbanzos" class="seleccionadoGarbanzo">Garbanzos</label>
+            </div>
+            <div class="inicial categorias" id="galletas">
+                <h2>Elija que va a querer comer</h2>
+                <input type="radio" name="galletas" class="pedidoEsconder" id="galletitas">
+                <label for="galletitas" class="seleccionadoGalletitas">Galletas</label>
+                <input type="radio" name="galletas" class="pedidoEsconder" id="brownies">
+                <label for="brownies" class="seleccionadoBrownies">Brownies</label>
+                <input type="radio" name="galletas" class="pedidoEsconder" id="bombones">
+                <label for="bombones" class="seleccionadoBombones">Bombones</label>
+                <input type="radio" name="galletas" class="pedidoEsconder" id="tartas">
+                <label for="tartas" class="seleccionadoTartas">Tartas</label>
+            </div>
+            <div class="inicial categorias" id="gustoGalletas">
+                <h2>Elija el sabor de su galleta</h2>
+                <input type="radio" name="gustoGalletas" class="pedidoEsconder" id="opcion5">
+                <label for="opcion5" class="seleccionado5">Chocolate</label>
+                <input type="radio" name="gustoGalletas" class="pedidoEsconder" id="opcion6">
+                <label for="opcion6" class="seleccionado6">Vainilla</label>
+            </div>
+            <div class="inicial categorias" id="pedidoTexto">
+                <h2>Cualquier dato extra que nos pueda brindar sobre su pedido por favor pongalo
+                    aca.</h2>
+                <input type="text" id="otros">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <ul class="iconos">
+                <li><a href="contacto.html" class="footer__texto--estilo"><i
+                            class="fas fa-envelope footer__icono--contacto"></i>Contacto</a></li>
+                <li><a href="sobrenosotros.html" class="footer__texto--estilo"><i
+                            class="fas fa-users footer__icono--sobreNosotros"></i>Sobre Nosotros</a></li>
+            </ul>
+            <ul class="redes">
+                <li><a href="https://www.instagram.com/aurorapasteleriavegana/?hl=es-la" target="_blank"><i
+                            class="fab fa-instagram footer__icono--estilo"></i></a></li>
+                <li><a href="https://chat.whatsapp.com/CdNDdxHeNXBIgzKGCjBrwz" target="_blank"><i
+                            class="fab fa-whatsapp footer__icono--estilo"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
