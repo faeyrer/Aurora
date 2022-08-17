@@ -1,6 +1,7 @@
 /* Cotización en cuotas */
 /* Funcion para validar el valor a cotizar*/
 function validacion_inicial() {
+    valor_inicial = (parseFloat(prompt("Ingrese el costo total de su pedido        *operamos solo con valores entre 1000 y 50000*")));
     while ((isNaN(valor_inicial)) || (valor_inicial < 1000) || (valor_inicial > 50000)){
             alert("No trabajamos con esos valores por favor vuelva a intentar");
             valor_inicial = (parseInt(prompt("Ingrese el costo final de su pedido        *operamos solo con valores entre 1000 y 50000*")));
@@ -87,7 +88,6 @@ function cabal_cuotas() {
     }
 /*Funcion para iniciar una cotización nueva */
 function cotizacion() {
-    confirmacion = prompt("¿Desea iniciar una nueva cotización o salir? Por favor ingrese *iniciar* *salir* ");
     while (confirmacion.toUpperCase() == "INICIAR") {
         validacion_inicial();
         seleccion_banco();
@@ -105,11 +105,11 @@ function cotizacion() {
 }
 
 
-    let valor_inicial = (parseFloat(prompt("Ingrese el costo total de su pedido        *operamos solo con valores entre 1000 y 50000*")));
+    let valor_inicial = "";
     let numero_de_cuotas = "";
     let valor_con_intereses = 0;
     let valor_cuota = 0;
     let entidad_bancaria = "";
-    let confirmacion = "";
+    let confirmacion = prompt("¿Desea iniciar una nueva cotización o salir? Por favor ingrese *iniciar* *salir* ");
 
     cotizacion();
