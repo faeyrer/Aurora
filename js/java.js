@@ -1,12 +1,10 @@
 /* Cotización en cuotas */
 /* Funcion para validar el valor a cotizar*/
 function validacion_inicial() {
-    do {
-        if ((isNaN(valor_inicial)) || (valor_inicial < 1000) || (valor_inicial > 50000)) {
-            alert("No trabajamos con esos valores por favor vuelva a intentar")
-            valor_inicial = (parseInt(prompt("Ingrese el costo final de su pedido        *operamos solo con valores entre 1000 y 50000*")))
-        }
-    } while ((isNaN(valor_inicial)) || (valor_inicial < 1000) || (valor_inicial > 50000));
+    while ((isNaN(valor_inicial)) || (valor_inicial < 1000) || (valor_inicial > 50000)){
+            alert("No trabajamos con esos valores por favor vuelva a intentar");
+            valor_inicial = (parseInt(prompt("Ingrese el costo final de su pedido        *operamos solo con valores entre 1000 y 50000*")));
+    }
 }
 /*Funcion para elegir entidad bancaria */
 function seleccion_banco() {
