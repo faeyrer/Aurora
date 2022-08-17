@@ -1,7 +1,6 @@
 /* Cotización en cuotas */
 /* Funcion para validar el valor a cotizar*/
 function validacion_inicial() {
-    valor_inicial = (parseFloat(prompt("Ingrese el costo total de su pedido        *operamos solo con valores entre 1000 y 50000*")))
     do {
         if ((isNaN(valor_inicial)) || (valor_inicial < 1000) || (valor_inicial > 50000)) {
             alert("No trabajamos con esos valores por favor vuelva a intentar")
@@ -108,7 +107,7 @@ function cotizacion() {
 }
 
 
-    let valor_inicial = "";
+    let valor_inicial = (parseFloat(prompt("Ingrese el costo total de su pedido        *operamos solo con valores entre 1000 y 50000*")));
     let numero_de_cuotas = "";
     let valor_con_intereses = 0;
     let valor_cuota = 0;
